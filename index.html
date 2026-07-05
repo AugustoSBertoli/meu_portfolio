@@ -52,8 +52,7 @@
           </svg>
           Ver Projetos
         </a>
-        <a href="docs/Currículo_Augusto_D_S_Bertoli.pdf"
-          class="btn-secondary" target="_blank">
+        <a href="docs/Currículo_Augusto_D_S_Bertoli.pdf" class="btn-secondary" target="_blank">
           <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M12 15V3m0 12-4-4m4 4 4-4" />
             <path d="M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17" />
@@ -104,7 +103,8 @@
       <div class="about-text fade-up">
         <p>Sou Augusto De Souza Bertoli, Desenvolvedor Front-End Júnior focado em criar interfaces responsivas,
           acessíveis e de alta performance utilizando <strong>HTML, CSS e JavaScript</strong> — incluindo Fetch API,
-          async/await, localStorage, CSS Grid, Flexbox e design responsivo.</p>
+          async/await, localStorage, CSS Grid, Flexbox e design responsivo. Também venho estudando <strong>React</strong>,
+          aplicado no meu projeto mais recente.</p>
 
         <p>Graduado em Análise e Desenvolvimento de Sistemas pela UNIP e atualmente cursando pós-graduação em
           Desenvolvimento Front-End pela Anhanguera. Possuo experiência prática no desenvolvimento de aplicações web
@@ -122,7 +122,7 @@
           <div class="stat-label">Linguagens & tecnologias</div>
         </div>
         <div class="stat-card">
-          <div class="stat-number">6<span>+</span></div>
+          <div class="stat-number">7<span>+</span></div>
           <div class="stat-label">Projetos desenvolvidos</div>
         </div>
         <div class="stat-card">
@@ -168,6 +168,13 @@
       </div>
       <div class="skill-card">
         <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="32" alt="React">
+        </div>
+        <div class="skill-name">React</div>
+        <div class="skill-type">Hooks · Context API</div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" width="32" alt="C#">
         </div>
         <div class="skill-name">C#</div>
@@ -207,25 +214,72 @@
       <div class="section-divider"></div>
     </div>
     <div class="projects-grid">
+
+      <!-- Cardápio Digital -->
+
       <div class="project-card fade-up destaque">
         <div class="project-thumb">
-          <img src="img/MyCine.PNG" alt="MyCine" loading="lazy">
+          <img src="img/cardapio.JPG" alt="Cardápio Digital" loading="lazy">
           <div class="project-overlay">
-            <a href="https://augustosbertoli.github.io/MyCine" class="project-overlay-btn" target="_blank">Ver site
+            <a href="https://augustosbertoli.github.io/cardapio-react/" class="project-overlay-btn" target="_blank">Ver site
               →</a>
-            <a href="https://github.com/AugustoSBertoli/MyCine" class="project-overlay-btn" target="_blank">Ver no
+            <a href="https://github.com/AugustoSBertoli/cardapio-react" class="project-overlay-btn" target="_blank">Ver no
               GitHub →</a>
           </div>
         </div>
 
-        <!-- MyCine -->
-
         <div class="project-info">
           <div class="project">
-            <div class="project-title">MyCine</div>
+            <div class="project-title">Cardápio Digital</div>
             <span class="project-span">
               Projeto em destaque
             </span>
+          </div>
+          <p class="project-text">Cardápio digital web responsivo (mobile-first), simulando acesso via QR Code em mesa
+            de restaurante. Inclui carrinho de compras com gerenciamento de estado via Context API e useReducer, bottom
+            sheet de customização com adicionais opcionais e recálculo de preço em tempo real, persistência do carrinho
+            com localStorage e microinteração de feedback visual ao adicionar itens.</p>
+          <div class="project-tags">
+            <span class="project-tag">React</span>
+            <span class="project-tag">JavaScript</span>
+            <span class="project-tag">Context API</span>
+            <span class="project-tag">useReducer</span>
+            <span class="project-tag">CSS</span>
+            <span class="project-tag">localStorage</span>
+          </div>
+
+          <a href="https://github.com/AugustoSBertoli/cardapio-react" class="project-link" target="_blank">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path
+                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+            </svg>
+            Ver no GitHub
+          </a>
+
+          <a href="https://augustosbertoli.github.io/cardapio-react/" class="project-link" target="_blank">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+              <polyline points="15 3 21 3 21 9" />
+              <line x1="10" y1="14" x2="21" y2="3" />
+            </svg>
+            Ver Site
+          </a>
+        </div>
+      </div>
+
+      <!-- MyCine -->
+
+      <div class="project-card fade-up">
+        <div class="project-thumb">
+          <img src="img/MyCine.PNG" alt="MyCine" loading="lazy">
+          <div class="project-overlay">
+            <a href="https://augustosbertoli.github.io/MyCine" class="project-overlay-btn" target="_blank">Ver site →</a>
+            <a href="https://github.com/AugustoSBertoli/MyCine" class="project-overlay-btn" target="_blank">Ver no GitHub →</a>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project">
+            <div class="project-title">MyCine</div>
           </div>
           <p class="project-text">Aplicação web de descoberta e catalogação de filmes consumindo a API do TMDB em tempo
             real. Inclui busca e filtro por gênero com scroll infinito, página de detalhes com elenco e onde assistir no
@@ -353,7 +407,7 @@
           <div class="project-tags">
             <span class="project-tag">HTML</span><span class="project-tag">CSS</span>
           </div>
-           <a href="https://github.com/AugustoSBertoli/alurabooks" class="project-link" target="_blank">
+          <a href="https://github.com/AugustoSBertoli/alurabooks" class="project-link" target="_blank">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path
                 d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
@@ -389,7 +443,7 @@
           <div class="project-tags">
             <span class="project-tag">HTML</span><span class="project-tag">CSS</span>
           </div>
-           <a href="https://github.com/AugustoSBertoli/site_alura_plus" class="project-link" target="_blank">
+          <a href="https://github.com/AugustoSBertoli/site_alura_plus" class="project-link" target="_blank">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path
                 d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
@@ -427,7 +481,7 @@
               class="project-tag">JavaScript</span>
           </div>
 
-           <a href="https://github.com/AugustoSBertoli/Carrinho_de_compras" class="project-link" target="_blank">
+          <a href="https://github.com/AugustoSBertoli/Carrinho_de_compras" class="project-link" target="_blank">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path
                 d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
@@ -502,6 +556,7 @@
           <li>JavaScript: construindo páginas dinâmicas</li>
           <li>HTTP: entendendo a web por baixo dos panos</li>
           <li>Formação: Iniciante em Programação com JavaScript</li>
+          <li>Curso de React JS (em andamento)</li>
         </ul>
       </div>
       <div class="curso-group">
@@ -580,8 +635,7 @@
       </div>
       <div class="cv-section">
         <p>Prefere ver meu currículo completo? Faça o download em PDF:</p>
-        <a href="docs/Currículo_Augusto_D_S_Bertoli.pdf"
-          class="btn-primary" target="_blank">
+        <a href="docs/Currículo_Augusto_D_S_Bertoli.pdf" class="btn-primary" target="_blank">
           <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M12 15V3m0 12-4-4m4 4 4-4" />
             <path d="M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17" />
