@@ -5,54 +5,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
-    content="Portfólio de Augusto Bertoli — Desenvolvedor Front-End Júnior com experiência em HTML, CSS, JavaScript, C#, Python e SQL.">
-  <meta name="keywords" content="Desenvolvedor, Front-End, JavaScript, HTML, CSS, C#, Python, Augusto Bertoli">
+    content="Portfólio de Augusto Bertoli, Desenvolvedor Front-End Júnior com experiência em HTML, CSS, JavaScript, C#, Python e SQL.">
   <meta name="author" content="Augusto Bertoli">
-  <title>Augusto Bertoli — Desenvolvedor Front-End</title>
+  <title>Augusto Bertoli | Desenvolvedor Front-End</title>
   <meta name="google-site-verification" content="03Qo13SDrVYv6jrH0rDW0XhStbQQRDWxE9ibIB2eCk4" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="icon" href="img/favicon.png" type="image/png">
   <link
-    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
 
-  <!-- NAV -->
-  <nav>
-    <a href="#" class="nav-logo">Augusto<span>Bertoli</span></a>
-    <ul class="nav-links">
+  <header class="cabecalho">
+    <a href="#inicio" class="cabecalho-logo">Augusto<span>Bertoli</span></a>
+    <ul class="cabecalho-menu" id="cabecalho-menu">
       <li><a href="#sobre">Sobre</a></li>
       <li><a href="#habilidades">Skills</a></li>
       <li><a href="#projetos">Projetos</a></li>
       <li><a href="#formacoes">Formação</a></li>
       <li><a href="#cursos">Cursos</a></li>
     </ul>
-    <a href="#contatos" class="nav-cta">Contato</a>
-    <div class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <a href="#contatos" class="cabecalho-contato">Contato</a>
+    <div class="cabecalho-hamburguer" id="hamburguer" aria-label="Menu">
       <span></span><span></span><span></span>
     </div>
-  </nav>
+  </header>
 
-  <!-- HERO -->
-  <section class="hero" id="home">
-    <div class="hero-content">
-      <div class="hero-tag">Disponível para oportunidades</div>
-      <h1>Desenvolvedor<br><em>Front-End</em> Júnior</h1>
-      <p class="hero-desc">Olá! Sou Augusto Bertoli, de São Paulo — SP. Crio interfaces responsivas, acessíveis e
-        performáticas utilizando HTML, CSS e JavaScript, com foco em UI/UX e boas práticas de desenvolvimento.</p>
-      <div class="hero-actions">
-        <a href="#projetos" class="btn-primary">
+  <section class="secao-hero" id="inicio">
+    <div class="hero-conteudo">
+      <h1>Desenvolvedor<br>Front-End Júnior</h1>
+      <p class="hero-descricao">Olá! Sou Augusto Bertoli, de São Paulo, SP. Crio interfaces responsivas, acessíveis
+        e performáticas utilizando HTML, CSS e JavaScript, com foco em UI/UX e boas práticas de desenvolvimento.</p>
+      <div class="hero-acoes">
+        <a href="#projetos" class="botao-primario">
           <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
             <rect x="2" y="3" width="20" height="14" rx="2" />
             <path d="M8 21h8m-4-4v4" />
           </svg>
           Ver Projetos
         </a>
-        <a href="docs/Currículo_Augusto_D_S_Bertoli.pdf" class="btn-secondary" target="_blank">
+        <a href="docs/Currículo_Augusto_D_S_Bertoli.pdf" class="botao-secundario" target="_blank">
           <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M12 15V3m0 12-4-4m4 4 4-4" />
             <path d="M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17" />
@@ -60,29 +55,29 @@
           Download CV
         </a>
       </div>
-      <div class="hero-socials">
+      <div class="hero-redes">
         <span>Redes</span>
-        <a href="https://linkedin.com/in/augusto-de-souza-bertoli" class="social-link" title="LinkedIn" target="_blank">
+        <a href="https://linkedin.com/in/augusto-de-souza-bertoli" class="rede-link" title="LinkedIn" target="_blank">
           <svg viewBox="0 0 24 24">
             <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
             <rect x="2" y="9" width="4" height="12" />
             <circle cx="4" cy="4" r="2" />
           </svg>
         </a>
-        <a href="https://github.com/AugustoSBertoli" class="social-link" title="GitHub" target="_blank">
+        <a href="https://github.com/AugustoSBertoli" class="rede-link" title="GitHub" target="_blank">
           <svg viewBox="0 0 24 24">
             <path
               d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
           </svg>
         </a>
-        <a href="https://www.instagram.com/augusto.bertoli" class="social-link" title="Instagram" target="_blank">
+        <a href="https://www.instagram.com/augusto.bertoli" class="rede-link" title="Instagram" target="_blank">
           <svg viewBox="0 0 24 24">
             <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
             <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
             <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
           </svg>
         </a>
-        <a href="mailto:augustosbertoli@gmail.com" class="social-link" title="E-mail">
+        <a href="mailto:augustosbertoli@gmail.com" class="rede-link" title="E-mail">
           <svg viewBox="0 0 24 24">
             <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
             <polyline points="22,6 12,13 2,6" />
@@ -92,466 +87,321 @@
     </div>
   </section>
 
-  <!-- SOBRE -->
   <section id="sobre">
-    <div class="fade-up">
-      <span class="section-label">Quem sou eu</span>
+    <div class="revelar">
+      <span class="secao-rotulo">Quem sou eu</span>
       <h2>Sobre Mim</h2>
-      <div class="section-divider"></div>
+      <div class="secao-divisor"></div>
     </div>
-    <div class="about-grid">
-      <div class="about-text fade-up">
+    <div class="sobre-grid">
+      <div class="sobre-texto revelar">
         <p>Sou Augusto De Souza Bertoli, Desenvolvedor Front-End Júnior focado em criar interfaces responsivas,
-          acessíveis e de alta performance utilizando <strong>HTML, CSS e JavaScript</strong> — incluindo Fetch API,
-          async/await, localStorage, CSS Grid, Flexbox e design responsivo. Também venho estudando <strong>React</strong>,
-          aplicado no meu projeto mais recente.</p>
+          acessíveis e de alta performance utilizando <strong>HTML, CSS e JavaScript</strong>, incluindo Fetch API,
+          async/await, localStorage, CSS Grid, Flexbox e design responsivo. Também venho estudando
+          <strong>React</strong>, aplicado no meu projeto mais recente.
+        </p>
 
         <p>Graduado em Análise e Desenvolvimento de Sistemas pela UNIP e atualmente cursando pós-graduação em
           Desenvolvimento Front-End pela Anhanguera. Possuo experiência prática no desenvolvimento de aplicações web
           modernas, com ênfase em organização de código e boas práticas de UI/UX.</p>
 
-        <p>Além do Front-End, tenho conhecimentos complementares em <strong>C, C#, Python e SQL</strong>. Busco aplicar
-          meus conhecimentos técnicos para contribuir com soluções eficientes e evoluir em um ambiente profissional
-          colaborativo.</p>
-        <p>📍 São Paulo, SP 🌍 Inglês básico · Espanhol básico</p>
-
+        <p>Além do Front-End, tenho conhecimentos complementares em <strong>C, C#, Python e SQL</strong>. Busco
+          aplicar meus conhecimentos técnicos para contribuir com soluções eficientes e evoluir em um ambiente
+          profissional colaborativo.</p>
+        <p class="sobre-localizacao">São Paulo, SP · Inglês básico · Espanhol básico</p>
       </div>
-      <div class="stats-grid fade-up">
-        <div class="stat-card">
-          <div class="stat-number">6<span>+</span></div>
-          <div class="stat-label">Linguagens & tecnologias</div>
+      <dl class="sobre-estatisticas revelar">
+        <div class="estatistica-item">
+          <dt class="estatistica-numero">6+</dt>
+          <dd class="estatistica-rotulo">Linguagens & tecnologias</dd>
         </div>
-        <div class="stat-card">
-          <div class="stat-number">7<span>+</span></div>
-          <div class="stat-label">Projetos desenvolvidos</div>
+        <div class="estatistica-item">
+          <dt class="estatistica-numero">7+</dt>
+          <dd class="estatistica-rotulo">Projetos desenvolvidos</dd>
         </div>
-        <div class="stat-card">
-          <div class="stat-number">20<span>+</span></div>
-          <div class="stat-label">Cursos concluídos</div>
+        <div class="estatistica-item">
+          <dt class="estatistica-numero">20+</dt>
+          <dd class="estatistica-rotulo">Cursos concluídos</dd>
         </div>
-        <div class="stat-card">
-          <div class="stat-number">2<span>x</span></div>
-          <div class="stat-label">Formações em TI</div>
+        <div class="estatistica-item">
+          <dt class="estatistica-numero">2x</dt>
+          <dd class="estatistica-rotulo">Formações em TI</dd>
         </div>
-      </div>
+      </dl>
     </div>
   </section>
 
-  <!-- HABILIDADES -->
   <section id="habilidades">
-    <div class="fade-up">
-      <span class="section-label">Stack técnica</span>
+    <div class="revelar">
+      <span class="secao-rotulo">Stack técnica</span>
       <h2>Habilidades</h2>
-      <div class="section-divider"></div>
+      <div class="secao-divisor"></div>
     </div>
-    <div class="skills-grid fade-up">
-      <div class="skill-card">
-        <div class="skill-icon">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="32" alt="HTML5">
-        </div>
-        <div class="skill-name">HTML5</div>
+    <div class="habilidades-grid revelar">
+      <div class="habilidade-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="28" alt="HTML5">
+        <span class="habilidade-nome">HTML5</span>
       </div>
-      <div class="skill-card">
-        <div class="skill-icon">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="32" alt="CSS3">
-        </div>
-        <div class="skill-name">CSS3</div>
-        <div class="skill-type">Grid · Flexbox · Responsivo</div>
+      <div class="habilidade-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="28" alt="CSS3">
+        <span class="habilidade-nome">CSS3</span>
+        <span class="habilidade-detalhe">Grid · Flexbox · Responsivo</span>
       </div>
-      <div class="skill-card">
-        <div class="skill-icon">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="32"
-            alt="JavaScript">
-        </div>
-        <div class="skill-name">JavaScript</div>
-        <div class="skill-type">Fetch API · async/await</div>
+      <div class="habilidade-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="28"
+          alt="JavaScript">
+        <span class="habilidade-nome">JavaScript</span>
+        <span class="habilidade-detalhe">Fetch API · async/await</span>
       </div>
-      <div class="skill-card">
-        <div class="skill-icon">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="32" alt="React">
-        </div>
-        <div class="skill-name">React</div>
-        <div class="skill-type">Hooks · Context API</div>
+      <div class="habilidade-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="28" alt="React">
+        <span class="habilidade-nome">React</span>
+        <span class="habilidade-detalhe">Hooks · Context API</span>
       </div>
-      <div class="skill-card">
-        <div class="skill-icon">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" width="32" alt="C#">
-        </div>
-        <div class="skill-name">C#</div>
-        <div class="skill-type">OOP · Windows Forms</div>
+      <div class="habilidade-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" width="28" alt="C#">
+        <span class="habilidade-nome">C#</span>
+        <span class="habilidade-detalhe">OOP · Windows Forms</span>
       </div>
-      <div class="skill-card">
-        <div class="skill-icon">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="32"
-            alt="Python">
-        </div>
-        <div class="skill-name">Python</div>
-        <div class="skill-type">OOP · APIs</div>
+      <div class="habilidade-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="28"
+          alt="Python">
+        <span class="habilidade-nome">Python</span>
+        <span class="habilidade-detalhe">OOP · APIs</span>
       </div>
-      <div class="skill-card">
-        <div class="skill-icon">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="32" alt="SQL">
-        </div>
-        <div class="skill-name">SQL</div>
-        <div class="skill-type">SQLite · Consultas</div>
+      <div class="habilidade-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="28" alt="SQL">
+        <span class="habilidade-nome">SQL</span>
+        <span class="habilidade-detalhe">SQLite · Consultas</span>
       </div>
-      <div class="skill-card">
-        <div class="skill-icon">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" width="32" alt="C">
-        </div>
-        <div class="skill-name">Linguagem C</div>
-        <div class="skill-type">Arquivos · Vetores</div>
+      <div class="habilidade-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" width="28" alt="C">
+        <span class="habilidade-nome">Linguagem C</span>
+        <span class="habilidade-detalhe">Arquivos · Vetores</span>
       </div>
-
     </div>
   </section>
 
-  <!-- PROJETOS -->
   <section id="projetos">
-    <div class="fade-up">
-      <span class="section-label">Trabalhos recentes</span>
+    <div class="revelar">
+      <span class="secao-rotulo">Trabalhos recentes</span>
       <h2>Projetos</h2>
-      <div class="section-divider"></div>
+      <div class="secao-divisor"></div>
     </div>
-    <div class="projects-grid">
+    <div class="projetos-grid">
 
-      <!-- Cardápio Digital -->
-
-      <div class="project-card fade-up destaque">
-        <div class="project-thumb">
+      <article class="projeto-card revelar destaque">
+        <div class="projeto-imagem">
           <img src="img/cardapio.JPG" alt="Cardápio Digital" loading="lazy">
-          <div class="project-overlay">
-            <a href="https://augustosbertoli.github.io/cardapio-react/" class="project-overlay-btn" target="_blank">Ver site
+        </div>
+        <div class="projeto-info">
+          <div class="projeto-cabecalho">
+            <h3 class="projeto-titulo">Cardápio Digital</h3>
+            <span class="projeto-destaque-etiqueta">projeto em destaque</span>
+          </div>
+          <p class="projeto-texto">Cardápio digital web responsivo (mobile-first), simulando acesso via QR Code em
+            mesa de restaurante. Inclui carrinho de compras com gerenciamento de estado via Context API e
+            useReducer, bottom sheet de customização com adicionais opcionais e recálculo de preço em tempo real,
+            persistência do carrinho com localStorage e microinteração de feedback visual ao adicionar itens.</p>
+          <div class="projeto-tags">
+            <span class="projeto-tag">React</span>
+            <span class="projeto-tag">JavaScript</span>
+            <span class="projeto-tag">Context API</span>
+            <span class="projeto-tag">useReducer</span>
+            <span class="projeto-tag">CSS</span>
+            <span class="projeto-tag">localStorage</span>
+          </div>
+          <div class="projeto-links">
+            <a href="https://github.com/AugustoSBertoli/cardapio-react" class="projeto-link" target="_blank">Código
               →</a>
-            <a href="https://github.com/AugustoSBertoli/cardapio-react" class="project-overlay-btn" target="_blank">Ver no
-              GitHub →</a>
+            <a href="https://augustosbertoli.github.io/cardapio-react/" class="projeto-link" target="_blank">Site
+              →</a>
           </div>
         </div>
+      </article>
 
-        <div class="project-info">
-          <div class="project">
-            <div class="project-title">Cardápio Digital</div>
-            <span class="project-span">
-              Projeto em destaque
-            </span>
-          </div>
-          <p class="project-text">Cardápio digital web responsivo (mobile-first), simulando acesso via QR Code em mesa
-            de restaurante. Inclui carrinho de compras com gerenciamento de estado via Context API e useReducer, bottom
-            sheet de customização com adicionais opcionais e recálculo de preço em tempo real, persistência do carrinho
-            com localStorage e microinteração de feedback visual ao adicionar itens.</p>
-          <div class="project-tags">
-            <span class="project-tag">React</span>
-            <span class="project-tag">JavaScript</span>
-            <span class="project-tag">Context API</span>
-            <span class="project-tag">useReducer</span>
-            <span class="project-tag">CSS</span>
-            <span class="project-tag">localStorage</span>
-          </div>
-
-          <a href="https://github.com/AugustoSBertoli/cardapio-react" class="project-link" target="_blank">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path
-                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
-            </svg>
-            Ver no GitHub
-          </a>
-
-          <a href="https://augustosbertoli.github.io/cardapio-react/" class="project-link" target="_blank">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-              <polyline points="15 3 21 3 21 9" />
-              <line x1="10" y1="14" x2="21" y2="3" />
-            </svg>
-            Ver Site
-          </a>
-        </div>
-      </div>
-
-      <!-- MyCine -->
-
-      <div class="project-card fade-up">
-        <div class="project-thumb">
+      <article class="projeto-card revelar">
+        <div class="projeto-imagem">
           <img src="img/MyCine.PNG" alt="MyCine" loading="lazy">
-          <div class="project-overlay">
-            <a href="https://augustosbertoli.github.io/MyCine" class="project-overlay-btn" target="_blank">Ver site →</a>
-            <a href="https://github.com/AugustoSBertoli/MyCine" class="project-overlay-btn" target="_blank">Ver no GitHub →</a>
+        </div>
+        <div class="projeto-info">
+          <h3 class="projeto-titulo">MyCine</h3>
+          <p class="projeto-texto">Aplicação web de descoberta e catalogação de filmes consumindo a API do TMDB em
+            tempo real. Inclui busca e filtro por gênero com scroll infinito, página de detalhes com elenco e onde
+            assistir no Brasil, sistema de favoritos, filmes assistidos e listas personalizadas com localStorage e
+            perfil de usuário responsivo.</p>
+          <div class="projeto-tags">
+            <span class="projeto-tag">HTML5</span>
+            <span class="projeto-tag">CSS3</span>
+            <span class="projeto-tag">JavaScript</span>
+            <span class="projeto-tag">Fetch API</span>
+            <span class="projeto-tag">TMDB API</span>
+            <span class="projeto-tag">localStorage</span>
+          </div>
+          <div class="projeto-links">
+            <a href="https://github.com/AugustoSBertoli/MyCine" class="projeto-link" target="_blank">Código →</a>
+            <a href="https://augustosbertoli.github.io/MyCine" class="projeto-link" target="_blank">Site →</a>
           </div>
         </div>
-        <div class="project-info">
-          <div class="project">
-            <div class="project-title">MyCine</div>
-          </div>
-          <p class="project-text">Aplicação web de descoberta e catalogação de filmes consumindo a API do TMDB em tempo
-            real. Inclui busca e filtro por gênero com scroll infinito, página de detalhes com elenco e onde assistir no
-            Brasil, sistema de favoritos, filmes assistidos e listas personalizadas com localStorage e perfil de usuário
-            responsivo.</p>
-          <div class="project-tags">
-            <span class="project-tag">HTML5</span>
-            <span class="project-tag">CSS3</span>
-            <span class="project-tag">JavaScript</span>
-            <span class="project-tag">Fetch API</span>
-            <span class="project-tag">TMDB API</span>
-            <span class="project-tag">localStorage</span>
-          </div>
+      </article>
 
-          <a href="https://github.com/AugustoSBertoli/MyCine" class="project-link" target="_blank">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path
-                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
-            </svg>
-            Ver no GitHub
-          </a>
-
-          <a href="https://augustosbertoli.github.io/MyCine" class="project-link" target="_blank">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-              <polyline points="15 3 21 3 21 9" />
-              <line x1="10" y1="14" x2="21" y2="3" />
-            </svg>
-            Ver Site
-          </a>
-        </div>
-      </div>
-
-      <!-- SeuNouraTechSuporte -->
-
-      <div class="project-card fade-up">
-        <div class="project-thumb">
-          <img src="https://augustosbertoli.github.io/meu_portfolio/img/homeChatbotOn.PNG" alt="SeuNouraTechSuport"
+      <article class="projeto-card revelar">
+        <div class="projeto-imagem">
+          <img src="https://augustosbertoli.github.io/meu_portfolio/img/homeChatbotOn.PNG" alt="SeuNouraTechSuporte"
             loading="lazy">
-          <div class="project-overlay">
-            <a href="https://augustosbertoli.github.io/SeuNouraTechSuporte/" class="project-overlay-btn"
-              target="_blank">Ver site →</a>
-          </div>
         </div>
-        <div class="project-info">
-          <div class="project-title">SeuNouraTechSuport</div>
-          <p class="project-text">Interface com chatbot
-            para automação de suporte técnico em hardware e software. Fluxo de triagem para serviços online e
-            presenciais com design responsivo.</p>
-          <div class="project-tags">
-            <span class="project-tag">HTML5</span><span class="project-tag">CSS3</span><span
-              class="project-tag">JavaScript</span>
+        <div class="projeto-info">
+          <h3 class="projeto-titulo">SeuNouraTechSuporte</h3>
+          <p class="projeto-texto">Interface com chatbot para automação de suporte técnico em hardware e software.
+            Fluxo de triagem para serviços online e presenciais com design responsivo.</p>
+          <div class="projeto-tags">
+            <span class="projeto-tag">HTML5</span>
+            <span class="projeto-tag">CSS3</span>
+            <span class="projeto-tag">JavaScript</span>
           </div>
-
-          <a href="https://github.com/AugustoSBertoli/SeuNouraTechSuporte" class="project-link" target="_blank">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path
-                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
-            </svg>
-            Ver no GitHub
-          </a>
-          <a href="https://augustosbertoli.github.io/SeuNouraTechSuporte" class="project-link" target="_blank">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-              <polyline points="15 3 21 3 21 9" />
-              <line x1="10" y1="14" x2="21" y2="3" />
-            </svg>
-            Ver Site
-          </a>
-        </div>
-      </div>
-
-      <!-- Loja de Carros -->
-
-      <div class="project-card fade-up">
-        <div class="project-thumb">
-          <img src="img/Loja de Carros.PNG" alt="Loja de Carros" loading="lazy">
-          <div class="project-overlay">
-            <a href="https://augustosbertoli.github.io/LojaDeCarros/" class="project-overlay-btn" target="_blank">Ver
-              site →</a>
-          </div>
-        </div>
-        <div class="project-info">
-          <div class="project-title">Loja de Carros</div>
-          <p class="project-text">Site multi-páginas para o setor automotivo com catálogo de veículos, galeria de
-            modelos, mapa integrado ao Google Maps e botão direto para WhatsApp.</p>
-          <div class="project-tags">
-            <span class="project-tag">HTML5</span><span class="project-tag">CSS3</span><span
-              class="project-tag">JavaScript</span>
-          </div>
-
-          <a href="https://github.com/AugustoSBertoli/LojaDeCarros" class="project-link" target="_blank">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path
-                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
-            </svg>
-            Ver no GitHub
-          </a>
-
-          <a href="https://augustosbertoli.github.io/LojaDeCarros/" class="project-link" target="_blank">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-              <polyline points="15 3 21 3 21 9" />
-              <line x1="10" y1="14" x2="21" y2="3" />
-            </svg>
-            Ver Site
-          </a>
-        </div>
-      </div>
-
-      <!-- AluraBooks -->
-
-      <div class="project-card fade-up">
-        <div class="project-thumb">
-          <img src="img/AluraBooks.PNG" alt="AluraBooks" loading="lazy">
-          <div class="project-overlay">
-            <a href="https://augustosbertoli.github.io/alurabooks/" class="project-overlay-btn" target="_blank">Ver site
+          <div class="projeto-links">
+            <a href="https://github.com/AugustoSBertoli/SeuNouraTechSuporte" class="projeto-link" target="_blank">Código
+              →</a>
+            <a href="https://augustosbertoli.github.io/SeuNouraTechSuporte" class="projeto-link" target="_blank">Site
               →</a>
           </div>
         </div>
-        <div class="project-info">
-          <div class="project-title">Livraria AluraBooks</div>
-          <p class="project-text">Site responsivo para livraria online aplicando conceitos de Flexbox e Media Queries
-            para adaptação em diferentes dispositivos.</p>
-          <div class="project-tags">
-            <span class="project-tag">HTML</span><span class="project-tag">CSS</span>
-          </div>
-          <a href="https://github.com/AugustoSBertoli/alurabooks" class="project-link" target="_blank">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path
-                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
-            </svg>
-            Ver no GitHub
-          </a>
+      </article>
 
-          <a href="https://augustosbertoli.github.io/alurabooks" class="project-link" target="_blank">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-              <polyline points="15 3 21 3 21 9" />
-              <line x1="10" y1="14" x2="21" y2="3" />
-            </svg>
-            Ver Site
-          </a>
+      <article class="projeto-card revelar">
+        <div class="projeto-imagem">
+          <img src="img/Loja de Carros.PNG" alt="Loja de Carros" loading="lazy">
         </div>
-      </div>
+        <div class="projeto-info">
+          <h3 class="projeto-titulo">Loja de Carros</h3>
+          <p class="projeto-texto">Site multi-páginas para o setor automotivo com catálogo de veículos, galeria de
+            modelos, mapa integrado ao Google Maps e botão direto para WhatsApp.</p>
+          <div class="projeto-tags">
+            <span class="projeto-tag">HTML5</span>
+            <span class="projeto-tag">CSS3</span>
+            <span class="projeto-tag">JavaScript</span>
+          </div>
+          <div class="projeto-links">
+            <a href="https://github.com/AugustoSBertoli/LojaDeCarros" class="projeto-link" target="_blank">Código
+              →</a>
+            <a href="https://augustosbertoli.github.io/LojaDeCarros/" class="projeto-link" target="_blank">Site
+              →</a>
+          </div>
+        </div>
+      </article>
 
-      <!-- Alura+ -->
+      <article class="projeto-card revelar">
+        <div class="projeto-imagem">
+          <img src="img/AluraBooks.PNG" alt="AluraBooks" loading="lazy">
+        </div>
+        <div class="projeto-info">
+          <h3 class="projeto-titulo">Livraria AluraBooks</h3>
+          <p class="projeto-texto">Site responsivo para livraria online aplicando conceitos de Flexbox e Media
+            Queries para adaptação em diferentes dispositivos.</p>
+          <div class="projeto-tags">
+            <span class="projeto-tag">HTML</span>
+            <span class="projeto-tag">CSS</span>
+          </div>
+          <div class="projeto-links">
+            <a href="https://github.com/AugustoSBertoli/alurabooks" class="projeto-link" target="_blank">Código →</a>
+            <a href="https://augustosbertoli.github.io/alurabooks" class="projeto-link" target="_blank">Site →</a>
+          </div>
+        </div>
+      </article>
 
-      <div class="project-card fade-up">
-        <div class="project-thumb">
+      <article class="projeto-card revelar">
+        <div class="projeto-imagem">
           <img src="img/SiteAlura.PNG" alt="Alura+" loading="lazy">
-          <div class="project-overlay">
-            <a href="https://augustosbertoli.github.io/site_alura_plus/" class="project-overlay-btn" target="_blank">Ver
-              site →</a>
+        </div>
+        <div class="projeto-info">
+          <h3 class="projeto-titulo">Alura+</h3>
+          <p class="projeto-texto">Landing page responsiva para um serviço de streaming, com foco em layout moderno
+            e adaptabilidade mobile com Flexbox e Media Queries.</p>
+          <div class="projeto-tags">
+            <span class="projeto-tag">HTML</span>
+            <span class="projeto-tag">CSS</span>
+          </div>
+          <div class="projeto-links">
+            <a href="https://github.com/AugustoSBertoli/site_alura_plus" class="projeto-link" target="_blank">Código
+              →</a>
+            <a href="https://augustosbertoli.github.io/site_alura_plus" class="projeto-link" target="_blank">Site
+              →</a>
           </div>
         </div>
-        <div class="project-info">
-          <div class="project-title">Alura+</div>
-          <p class="project-text">Landing page responsiva para um serviço de streaming, com foco em layout moderno e
-            adaptabilidade mobile com Flexbox e Media Queries.</p>
-          <div class="project-tags">
-            <span class="project-tag">HTML</span><span class="project-tag">CSS</span>
-          </div>
-          <a href="https://github.com/AugustoSBertoli/site_alura_plus" class="project-link" target="_blank">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path
-                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
-            </svg>
-            Ver no GitHub
-          </a>
+      </article>
 
-          <a href="https://augustosbertoli.github.io/site_alura_plus" class="project-link" target="_blank">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-              <polyline points="15 3 21 3 21 9" />
-              <line x1="10" y1="14" x2="21" y2="3" />
-            </svg>
-            Ver Site
-          </a>
-        </div>
-      </div>
-
-      <!-- Carrinho de Compras -->
-
-      <div class="project-card fade-up">
-        <div class="project-thumb">
+      <article class="projeto-card revelar">
+        <div class="projeto-imagem">
           <img src="img/Mcarrinho.PNG" alt="Carrinho de Compras" loading="lazy">
-          <div class="project-overlay">
-            <a href="https://augustosbertoli.github.io/Carrinho_de_compras/" class="project-overlay-btn"
-              target="_blank">Ver site →</a>
-          </div>
         </div>
-        <div class="project-info">
-          <div class="project-title">Carrinho de Compras</div>
-          <p class="project-text">Sistema de carrinho de compras interativo com adição/remoção de itens e cálculo
+        <div class="projeto-info">
+          <h3 class="projeto-titulo">Carrinho de Compras</h3>
+          <p class="projeto-texto">Sistema de carrinho de compras interativo com adição/remoção de itens e cálculo
             dinâmico de totais.</p>
-          <div class="project-tags">
-            <span class="project-tag">HTML5</span><span class="project-tag">CSS3</span><span
-              class="project-tag">JavaScript</span>
+          <div class="projeto-tags">
+            <span class="projeto-tag">HTML5</span>
+            <span class="projeto-tag">CSS3</span>
+            <span class="projeto-tag">JavaScript</span>
           </div>
-
-          <a href="https://github.com/AugustoSBertoli/Carrinho_de_compras" class="project-link" target="_blank">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path
-                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
-            </svg>
-            Ver no GitHub
-          </a>
-
-          <a href="https://augustosbertoli.github.io/Carrinho_de_compras" class="project-link" target="_blank">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-              <polyline points="15 3 21 3 21 9" />
-              <line x1="10" y1="14" x2="21" y2="3" />
-            </svg>
-            Ver Site
-          </a>
-
+          <div class="projeto-links">
+            <a href="https://github.com/AugustoSBertoli/Carrinho_de_compras" class="projeto-link" target="_blank">Código
+              →</a>
+            <a href="https://augustosbertoli.github.io/Carrinho_de_compras" class="projeto-link" target="_blank">Site
+              →</a>
+          </div>
         </div>
-      </div>
+      </article>
+
     </div>
   </section>
 
-  <!-- FORMAÇÕES -->
   <section id="formacoes">
-    <div class="fade-up">
-      <span class="section-label">Trajetória acadêmica</span>
+    <div class="revelar">
+      <span class="secao-rotulo">Trajetória acadêmica</span>
       <h2>Formações</h2>
-      <div class="section-divider"></div>
+      <div class="secao-divisor"></div>
     </div>
-    <div class="timeline fade-up">
-      <div class="timeline-item">
+    <div class="linha-tempo revelar">
+      <div class="linha-tempo-item">
         <div>
-          <div class="timeline-degree">Análise e Desenvolvimento de Sistemas</div>
-          <div class="timeline-school">Universidade Paulista — UNIP</div>
-          <div class="timeline-date">Fevereiro 2024 – Dezembro 2025</div>
+          <div class="linha-tempo-curso">Análise e Desenvolvimento de Sistemas</div>
+          <div class="linha-tempo-instituicao">Universidade Paulista (UNIP)</div>
+          <div class="linha-tempo-data">Fevereiro 2024 – Dezembro 2025</div>
         </div>
-        <span class="timeline-badge badge-done">Concluído</span>
+        <span class="linha-tempo-status status-concluido">[concluído]</span>
       </div>
-      <div class="timeline-item">
+      <div class="linha-tempo-item">
         <div>
-          <div class="timeline-degree">Pós-Graduação em Desenvolvimento Front-End</div>
-          <div class="timeline-school">Anhanguera</div>
-          <div class="timeline-date">Fevereiro 2026 – Dezembro 2026</div>
+          <div class="linha-tempo-curso">Pós-Graduação em Desenvolvimento Front-End</div>
+          <div class="linha-tempo-instituicao">Anhanguera</div>
+          <div class="linha-tempo-data">Fevereiro 2026 – Dezembro 2026</div>
         </div>
-        <span class="timeline-badge badge-ongoing">Em curso</span>
+        <span class="linha-tempo-status status-andamento">[em andamento]</span>
       </div>
     </div>
   </section>
 
-  <!-- CURSOS -->
   <section id="cursos">
-    <div class="fade-up">
-      <span class="section-label">Aprendizado contínuo</span>
+    <div class="revelar">
+      <span class="secao-rotulo">Aprendizado contínuo</span>
       <h2>Cursos & Certificações</h2>
-      <div class="section-divider"></div>
+      <div class="secao-divisor"></div>
     </div>
-    <div class="cursos-grid fade-up">
-      <div class="curso-group">
-        <div class="curso-group-title">SENAI & Fundação Bradesco</div>
-        <ul class="curso-list">
-          <li>Tecnologia da Informação e Comunicação — SENAI</li>
-          <li>Lógica de Programação — SENAI</li>
-          <li>Projeto de Sistemas de TI — Fundação Bradesco</li>
-          <li>Python Básico — Fundação Bradesco</li>
-          <li>Android Studio: Apps Mobile — Fundação Bradesco</li>
-          <li>Microsoft Excel 2016 Básico — Fundação Bradesco</li>
+    <div class="cursos-grid revelar">
+      <div class="curso-grupo">
+        <div class="curso-grupo-titulo">SENAI & Fundação Bradesco</div>
+        <ul class="curso-lista">
+          <li>Tecnologia da Informação e Comunicação (SENAI)</li>
+          <li>Lógica de Programação (SENAI)</li>
+          <li>Projeto de Sistemas de TI (Fundação Bradesco)</li>
+          <li>Python Básico (Fundação Bradesco)</li>
+          <li>Android Studio: Apps Mobile (Fundação Bradesco)</li>
+          <li>Microsoft Excel 2016 Básico (Fundação Bradesco)</li>
         </ul>
       </div>
-      <div class="curso-group">
-        <div class="curso-group-title">Alura — Front-End & Web</div>
-        <ul class="curso-list">
+      <div class="curso-grupo">
+        <div class="curso-grupo-titulo">Alura: Front-End & Web</div>
+        <ul class="curso-lista">
           <li>Formação: HTML e CSS para projetos web</li>
           <li>JavaScript: construindo páginas dinâmicas</li>
           <li>HTTP: entendendo a web por baixo dos panos</li>
@@ -559,18 +409,18 @@
           <li>Curso de React JS (em andamento)</li>
         </ul>
       </div>
-      <div class="curso-group">
-        <div class="curso-group-title">Alura — Backend & Desktop</div>
-        <ul class="curso-list">
+      <div class="curso-grupo">
+        <div class="curso-grupo-titulo">Alura: Backend & Desktop</div>
+        <ul class="curso-lista">
           <li>Formação: C# com Orientação a Objetos</li>
           <li>Windows Forms com C#: formulários e eventos</li>
           <li>Formação: Python com Orientação a Objetos</li>
           <li>Formação: Linguagem C</li>
         </ul>
       </div>
-      <div class="curso-group">
-        <div class="curso-group-title">Alura — Dados</div>
-        <ul class="curso-list">
+      <div class="curso-grupo">
+        <div class="curso-grupo-titulo">Alura: Dados</div>
+        <ul class="curso-lista">
           <li>Formação: Conhecendo SQL</li>
           <li>Análise de dados com SQLite</li>
           <li>Instruções e consultas SQL avançadas</li>
@@ -579,63 +429,62 @@
     </div>
   </section>
 
-  <!-- CONTATO -->
   <section id="contatos">
-    <div class="fade-up">
-      <span class="section-label">Vamos conversar</span>
+    <div class="revelar secao-centralizada">
+      <span class="secao-rotulo">Vamos conversar</span>
       <h2>Contato</h2>
-      <div class="section-divider"></div>
+      <div class="secao-divisor"></div>
     </div>
-    <div class="contact-wrapper fade-up">
-      <p class="contact-lead">Estou aberto a oportunidades de emprego, freela ou colaboração em projetos. Fique à
+    <div class="contato-wrapper revelar">
+      <p class="contato-texto">Estou aberto a oportunidades de emprego, freela ou colaboração em projetos. Fique à
         vontade para entrar em contato!</p>
-      <div class="contact-grid">
-        <a href="mailto:augustosbertoli@gmail.com" class="contact-link">
+      <div class="contato-grid">
+        <a href="mailto:augustosbertoli@gmail.com" class="contato-link">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
             <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
             <polyline points="22,6 12,13 2,6" />
           </svg>
-          <div class="contact-link-text">
-            <span class="contact-link-label">E-mail</span>
-            <span class="contact-link-value">augustosbertoli@gmail.com</span>
-          </div>
+          <span class="contato-link-texto">
+            <span class="contato-link-rotulo">E-mail</span>
+            <span class="contato-link-valor">augustosbertoli@gmail.com</span>
+          </span>
         </a>
-        <a href="https://linkedin.com/in/augusto-de-souza-bertoli" class="contact-link" target="_blank">
+        <a href="https://linkedin.com/in/augusto-de-souza-bertoli" class="contato-link" target="_blank">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
             <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
             <rect x="2" y="9" width="4" height="12" />
             <circle cx="4" cy="4" r="2" />
           </svg>
-          <div class="contact-link-text">
-            <span class="contact-link-label">LinkedIn</span>
-            <span class="contact-link-value">Augusto Bertoli</span>
-          </div>
+          <span class="contato-link-texto">
+            <span class="contato-link-rotulo">LinkedIn</span>
+            <span class="contato-link-valor">Augusto Bertoli</span>
+          </span>
         </a>
-        <a href="https://github.com/AugustoSBertoli" class="contact-link" target="_blank">
+        <a href="https://github.com/AugustoSBertoli" class="contato-link" target="_blank">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
             <path
               d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
           </svg>
-          <div class="contact-link-text">
-            <span class="contact-link-label">GitHub</span>
-            <span class="contact-link-value">AugustoSBertoli</span>
-          </div>
+          <span class="contato-link-texto">
+            <span class="contato-link-rotulo">GitHub</span>
+            <span class="contato-link-valor">AugustoSBertoli</span>
+          </span>
         </a>
-        <a href="https://www.instagram.com/augusto.bertoli" class="contact-link" target="_blank">
+        <a href="https://www.instagram.com/augusto.bertoli" class="contato-link" target="_blank">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
             <rect x="2" y="2" width="20" height="20" rx="5" />
             <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
             <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
           </svg>
-          <div class="contact-link-text">
-            <span class="contact-link-label">Instagram</span>
-            <span class="contact-link-value">@augusto.bertoli</span>
-          </div>
+          <span class="contato-link-texto">
+            <span class="contato-link-rotulo">Instagram</span>
+            <span class="contato-link-valor">@augusto.bertoli</span>
+          </span>
         </a>
       </div>
-      <div class="cv-section">
+      <div class="curriculo-bloco">
         <p>Prefere ver meu currículo completo? Faça o download em PDF:</p>
-        <a href="docs/Currículo_Augusto_D_S_Bertoli.pdf" class="btn-primary" target="_blank">
+        <a href="docs/Currículo_Augusto_D_S_Bertoli.pdf" class="botao-primario" target="_blank">
           <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M12 15V3m0 12-4-4m4 4 4-4" />
             <path d="M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17" />
@@ -646,13 +495,11 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer>
-    <p class="footer-text">Desenvolvido por <span>Augusto De Souza Bertoli</span></p>
+  <footer class="rodape">
+    <p class="rodape-texto">Desenvolvido por <span>Augusto De Souza Bertoli</span></p>
   </footer>
 
-  <!-- SCROLL TOP -->
-  <a href="#home" class="scroll-top" id="scrollTop" aria-label="Voltar ao topo">
+  <a href="#inicio" class="topo-botao" id="topoBotao" aria-label="Voltar ao topo">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
       <path d="M18 15l-6-6-6 6" />
     </svg>
